@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/main.js"></script>
+
+    <style>
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-layout {
+            text-align: center;
+        }
+
+        ul.wish-list {
+            padding-left: 0;
+        }
+
+        ul.wish-list li.wish-item {
+            list-style-type: none;
+
+            background-color: yellowgreen;
+
+            cursor: pointer;
+        }
+
+        ul.wish-list li.wish-item span {
+            font-size: 20px;
+        }
+
+        li.wish-item.completed span {
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-layout">
+
+            <h1>
+                List of items
+            </h1>
+
+            <ul class="wish-list">
+                <li class="wish-item" data-id="1">
+                    <span>
+                        item 1
+                    </span>
+                </li>
+                <li class="wish-item" data-id="2">
+                    <span>
+                        item 2
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
